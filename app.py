@@ -8,9 +8,6 @@ import pickle
 # Load the trained model
 model = tf.keras.models.load_model('model.h5')
 
-### Load the trained model, scaler pickle,onehot
-model=load_model('model.h5')
-
 ## load the encoder and scaler
 with open('OHE_Geography.pkl','rb') as file:
     label_encoder_geo=pickle.load(file)
